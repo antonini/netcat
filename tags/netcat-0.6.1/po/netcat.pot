@@ -1,0 +1,309 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2002-10-15 19:07+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/core.c:140 src/core.c:416
+#, c-format
+msgid "Listening on %s"
+msgstr ""
+
+#: src/core.c:143
+#, c-format
+msgid "Listening on %s (using %d sockets)"
+msgstr ""
+
+#: src/core.c:227
+#, c-format
+msgid "Received packet from %s:%d -> %s:%d (local)"
+msgstr ""
+
+#: src/core.c:232
+#, c-format
+msgid "Received packet from %s:%d"
+msgstr ""
+
+#: src/core.c:361
+#, c-format
+msgid "%s open"
+msgstr ""
+
+#: src/core.c:444
+#, c-format
+msgid "Unwanted connection from %s:%hu (refused)"
+msgstr ""
+
+#: src/core.c:448
+#, c-format
+msgid "Connection from %s:%hu"
+msgstr ""
+
+#: src/misc.c:180
+msgid "Error:"
+msgstr ""
+
+#: src/misc.c:183
+msgid "Warning:"
+msgstr ""
+
+#: src/misc.c:232
+msgid "Cmd line:"
+msgstr ""
+
+#: src/misc.c:264
+#, c-format
+msgid "GNU netcat %s, a rewrite of the famous networking tool.\n"
+msgstr ""
+
+#: src/misc.c:265
+msgid "Basic usages:\n"
+msgstr ""
+
+#: src/misc.c:266
+#, c-format
+msgid "connect to somewhere:  %s [options] hostname port [port] ...\n"
+msgstr ""
+
+#: src/misc.c:267
+#, c-format
+msgid "listen for inbound:    %s -l -p port [options] [hostname] [port] ...\n"
+msgstr ""
+
+#: src/misc.c:268
+#, c-format
+msgid "tunnel to somewhere:   %s -L hostname:port -p port [options]\n"
+msgstr ""
+
+#: src/misc.c:270
+msgid ""
+"Mandatory arguments to long options are mandatory for short options too.\n"
+msgstr ""
+
+#: src/misc.c:271
+msgid ""
+"Options:\n"
+"  -e, --exec=PROGRAM         program to exec after connect\n"
+"  -g, --gateway=LIST         source-routing hop point[s], up to 8\n"
+"  -G, --pointer=NUM          source-routing pointer: 4, 8, 12, ...\n"
+"  -h, --help                 display this help and exit\n"
+"  -i, --interval=SECS        delay interval for lines sent, ports scanned\n"
+"  -l, --listen               listen mode, for inbound connects\n"
+"  -L, --tunnel=ADDRESS:PORT  forward local port to remote address\n"
+msgstr ""
+
+#: src/misc.c:279
+msgid ""
+"  -n, --dont-resolve         numeric-only IP addresses, no DNS\n"
+"  -o, --output=FILE          output hexdump traffic to FILE (implies -x)\n"
+"  -p, --local-port=NUM       local port number\n"
+"  -r, --randomize            randomize local and remote ports\n"
+"  -s, --source=ADDRESS       local source address (ip or hostname)\n"
+msgstr ""
+
+#: src/misc.c:286
+msgid ""
+"  -t, --tcp                  TCP mode (default)\n"
+"  -T, --telnet               answer using TELNET negotiation\n"
+msgstr ""
+
+#: src/misc.c:290
+msgid ""
+"      --tcp                  TCP mode (default)\n"
+"  -t, --telnet               answer using TELNET negotiation\n"
+"  -T                         same as --telnet (compat)\n"
+msgstr ""
+
+#: src/misc.c:295
+msgid ""
+"  -u, --udp                  UDP mode\n"
+"  -v, --verbose              verbose (use twice to be more verbose)\n"
+"  -V, --version              output version information and exit\n"
+"  -x, --hexdump              hexdump incoming and outgoing traffic\n"
+"  -w, --wait=SECS            timeout for connects and final net reads\n"
+"  -z, --zero                 zero-I/O mode (used for scanning)\n"
+msgstr ""
+
+#: src/misc.c:303
+msgid "Remote port number can also be specified as range.  Example: '1-1024'\n"
+msgstr ""
+
+#: src/misc.c:313
+msgid ""
+"Copyright (C) 2002  Giovanni Giacobbi\n"
+"\n"
+"This program comes with NO WARRANTY, to the extent permitted by law.\n"
+"You may redistribute copies of this program under the terms of\n"
+"the GNU General Public License.\n"
+"For more information about these matters, see the file named COPYING.\n"
+"\n"
+"Original idea and design by Avian Research <hobbit@avian.org>,\n"
+"Written by Giovanni Giacobbi <giovanni@giacobbi.net>.\n"
+msgstr ""
+
+#: src/netcat.c:80
+#, c-format
+msgid ""
+"Total received bytes: %s\n"
+"Total sent bytes: %s\n"
+msgstr ""
+
+#: src/netcat.c:89
+msgid "Terminated."
+msgstr ""
+
+#: src/netcat.c:102
+msgid "Exiting."
+msgstr ""
+
+#: src/netcat.c:143
+#, c-format
+msgid "Couldn't execute %s: %s"
+msgstr ""
+
+#: src/netcat.c:242
+msgid "Cannot specify `-e' option double"
+msgstr ""
+
+#: src/netcat.c:256
+#, c-format
+msgid "Invalid interval time \"%s\""
+msgstr ""
+
+#: src/netcat.c:261 src/netcat.c:267
+msgid "`-L' and `-l' options are incompatible"
+msgstr ""
+
+#: src/netcat.c:270 src/netcat.c:357
+msgid "`-L' and `-z' options are incompatible"
+msgstr ""
+
+#: src/netcat.c:278
+msgid "Invalid target string for `-L' option"
+msgstr ""
+
+#: src/netcat.c:283
+#, c-format
+msgid "Couldn't resolve tunnel target host: %s"
+msgstr ""
+
+#: src/netcat.c:286
+#, c-format
+msgid "Invalid tunnel target port: %s"
+msgstr ""
+
+#: src/netcat.c:302
+#, c-format
+msgid "Invalid local port: %s"
+msgstr ""
+
+#: src/netcat.c:308
+#, c-format
+msgid "Invalid tunnel connect port: %s"
+msgstr ""
+
+#: src/netcat.c:317
+#, c-format
+msgid "Couldn't resolve local host: %s"
+msgstr ""
+
+#: src/netcat.c:322
+#, c-format
+msgid "Couldn't resolve tunnel local host: %s"
+msgstr ""
+
+#: src/netcat.c:348
+#, c-format
+msgid "Invalid wait-time: %s"
+msgstr ""
+
+#: src/netcat.c:361 src/netcat.c:539
+#, c-format
+msgid "Try `%s --help' for more information."
+msgstr ""
+
+#: src/netcat.c:372
+msgid "Debugging support not compiled, option `-d' discarded."
+msgstr ""
+
+#: src/netcat.c:381
+msgid "Randomization support not compiled, option `-r' discarded."
+msgstr ""
+
+#: src/netcat.c:388
+#, c-format
+msgid "Failed to open output file: %s"
+msgstr ""
+
+#: src/netcat.c:401
+#, c-format
+msgid "Couldn't resolve host \"%s\""
+msgstr ""
+
+#: src/netcat.c:448
+#, c-format
+msgid "Invalid port specification: %s"
+msgstr ""
+
+#: src/netcat.c:490
+#, c-format
+msgid "Listen mode failed: %s"
+msgstr ""
+
+#: src/netcat.c:499 src/netcat.c:592
+msgid "Passing control to the specified program"
+msgstr ""
+
+#: src/netcat.c:538
+#, c-format
+msgid "%s: missing hostname argument"
+msgstr ""
+
+#: src/netcat.c:546
+msgid "No ports specified for connection"
+msgstr ""
+
+#: src/network.c:97
+#, c-format
+msgid "inverse host lookup failed for %s"
+msgstr ""
+
+#: src/network.c:108
+#, c-format
+msgid "This host's reverse DNS doesn't match! %s -- %s"
+msgstr ""
+
+#: src/network.c:128
+#, c-format
+msgid "inverse name lookup failed for `%s'"
+msgstr ""
+
+#: src/network.c:139
+#, c-format
+msgid "Host %s isn't authoritative! (direct lookup failed)"
+msgstr ""
+
+#: src/network.c:149
+#, c-format
+msgid "Host %s isn't authoritative! (direct lookup mismatch)"
+msgstr ""
+
+#: src/network.c:151
+#, c-format
+msgid "  %s -> %s  BUT  %s -> %s"
+msgstr ""
+
+#: src/network.c:258
+msgid "any address"
+msgstr ""
