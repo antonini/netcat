@@ -1,0 +1,191 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2002-05-08 22:43+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/misc.c:156
+msgid "Error:"
+msgstr ""
+
+#: src/misc.c:159
+msgid "Warning:"
+msgstr ""
+
+#: src/misc.c:202
+msgid "Cmd line:"
+msgstr ""
+
+#: src/misc.c:234
+#, c-format
+msgid "GNU netcat %s, a rewrite of the famous networking tool.\n"
+msgstr ""
+
+#: src/misc.c:235
+msgid "Basic usages:\n"
+msgstr ""
+
+#: src/misc.c:236
+#, c-format
+msgid "connect to somewhere:  %s [options] hostname port [port] ...\n"
+msgstr ""
+
+#: src/misc.c:237
+#, c-format
+msgid "listen for inbound:    %s -l -p port [options] [hostname] [port]\n"
+msgstr ""
+
+#: src/misc.c:239
+msgid ""
+"Mandatory arguments to long options are mandatory for short options too.\n"
+msgstr ""
+
+#: src/misc.c:240
+msgid ""
+"Options:\n"
+"  -e, --exec=PROGRAM         program to exec after connect\n"
+"  -g, --gateway=LIST         source-routing hop point[s], up to 8\n"
+"  -G, --pointer=NUM          source-routing pointer: 4, 8, 12, ...\n"
+"  -h, --help                 display this help and exit\n"
+"  -i, --interval=SECS        delay interval for lines sent, ports scanned\n"
+"  -l, --listen               listen mode, for inbound connects\n"
+"  -L, --tunnel               forward local port to remote address\n"
+"  -n, --dont-resolve         numeric-only IP addresses, no DNS\n"
+"  -o, --output=FILE          output hexdump traffic to FILE (implies -x)\n"
+"  -p, --local-port=NUM       local port number\n"
+"  -r, --randomize            randomize local and remote ports\n"
+"  -s, --source=ADDRESS       local source address (ip or hostname)\n"
+"  -t, --telnet               answer using TELNET negotiation\n"
+"  -u, --udp                  UDP mode\n"
+"  -v, --verbose              verbose (use twice to be more verbose)\n"
+"  -V, --version              output version information and exit\n"
+"  -x, --hexdump              hexdump incoming and outgoing traffic\n"
+"  -w, --wait=SECS            timeout for connects and final net reads\n"
+"  -z, --zero                 zero-I/O mode (used for scanning)\n"
+msgstr ""
+
+#: src/misc.c:261
+msgid "Remote port number can also be specified as range.  Example: '1-1024'\n"
+msgstr ""
+
+#: src/misc.c:271
+msgid ""
+"Copyright (C) 2002  Giovanni Giacobbi\n"
+"\n"
+"This program comes with NO WARRANTY, to the extent permitted by law.\n"
+"You may redistribute copies of this program under the terms of\n"
+"the GNU General Public License.\n"
+"For more information about these matters, see the file named COPYING.\n"
+"\n"
+"Original idea and design by Avian Research <hobbit@avian.org>,\n"
+"Written by Giovanni Giacobbi <johnny@themnemonic.org>.\n"
+msgstr ""
+
+#: src/netcat.c:67
+#, c-format
+msgid ""
+"Total received bytes: %ld\n"
+"Total sent bytes: %ld\n"
+msgstr ""
+
+#: src/netcat.c:91
+msgid "Exiting."
+msgstr ""
+
+#: src/netcat.c:361
+msgid "Cannot specify `-e' option double"
+msgstr ""
+
+#: src/netcat.c:375
+#, c-format
+msgid "Invalid interval time \"%s\""
+msgstr ""
+
+#: src/netcat.c:380 src/netcat.c:386
+msgid "`-L' and '-l' options are incompatible"
+msgstr ""
+
+#: src/netcat.c:398
+#, c-format
+msgid "Invalid local port: %s"
+msgstr ""
+
+#: src/netcat.c:407
+#, c-format
+msgid "Couldn't resolve local host: %s"
+msgstr ""
+
+#: src/netcat.c:426
+#, c-format
+msgid "Invalid wait-time: %s"
+msgstr ""
+
+#: src/netcat.c:436
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr ""
+
+#: src/netcat.c:451
+msgid "Failed to open output file"
+msgstr ""
+
+#: src/netcat.c:464
+#, c-format
+msgid "Couldn't resolve host \"%s\""
+msgstr ""
+
+#: src/netcat.c:505
+#, c-format
+msgid "Invalid port specification: %s"
+msgstr ""
+
+#: src/netcat.c:543
+#, c-format
+msgid "Listen mode failed: %s"
+msgstr ""
+
+#: src/netcat.c:555
+#, c-format
+msgid "Unwanted connection from %s:%hu (refused)"
+msgstr ""
+
+#: src/netcat.c:562
+#, c-format
+msgid "Connection from %s:%hu"
+msgstr ""
+
+#: src/netcat.c:647
+#, c-format
+msgid "%s open"
+msgstr ""
+
+#: src/network.c:84
+#, c-format
+msgid "inverse host lookup failed for %s"
+msgstr ""
+
+#: src/network.c:89 src/network.c:115
+#, c-format
+msgid "this host mismatch! %s - %s"
+msgstr ""
+
+#: src/network.c:106
+#, c-format
+msgid "Inverse name lookup failed for `%s'"
+msgstr ""
+
+#: src/network.c:112
+#, c-format
+msgid "direct host lookup failed for %s"
+msgstr ""

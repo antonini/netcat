@@ -1,0 +1,94 @@
+
+[*] Thu May  9 2002 - netcat v0.3.1
+
+  o Now "make install" also symlinks "nc" to the program file "netcat".
+  o More careful use of stderr/stdout for printing messages
+  o Updated file doc/migration
+  o Now it is possible to force the local source port when connecting to
+    somewhere using the -p option (this is not yet possible in tunnel
+    mode).
+  o Fixed some output messages in netcat.c
+
+
+[*] Mon May  6 2002 - netcat v0.3.0
+
+  o Fixed netcat_resolvehost() to be more library function.
+  o Added function netcat_socket_new() to network.c
+  o Added functions netcat_socket_new_listen() and netcat_socket_accept()
+    to network.c
+  o configure now checks for important gettext external data.
+  o Updated files INSTALL and COPYING
+  o Added function netcat_inet_ntop() to network.c
+  o Fixed backward incompatibility in netcat_fhexdump()
+  o Added file doc/migration.
+  o Fully rewrote the core part of the project.  The new core has total
+    async I/O support and is totally select() based.  It also introduces
+    a new command line arguments parsing style.  See the doc/migration
+    file for more information.
+  o Fixed the delayed (-i) output sending not displaying incoming data
+    immediately.
+  o Verbose messages are now printed automatically in debug mode.
+  o Changed copyrighter name
+  o Added command line switch `-L', activates the tunnel mode to
+    the host and port specified on the command line.
+  o Added function netcat_inet_pton() to network.c
+  o Added function ncprint() to misc.c, this allows a more powerful
+    output management and a more readability of the source code.
+  o Lots of fixes and improvements for portability
+
+
+[*] Wed May  1 2002 - netcat v0.2.2
+
+  o More fixes around the NLS (added the missing config.rpath script)
+  o Added lib directory that will contain all netcat related libraries.
+  o Added compatibility support (libcontrib) containing all the needed
+    functions not provided by the OS.
+  o Added GNU getopt to the compat library.
+  o More changes to the netcat_getport() function. Now it should catch
+    every kind of invalid input safely.
+
+
+[*] Tue Apr 30 2002 - netcat v0.2.1
+
+  o Various fixes to the Makefiles for the clean targets
+  o Fixed --enable-debug configure parameter
+  o Added configure option `--enable-oldhexdump', causes netcat to use the
+    old hexdump style rather than my new style.
+  o Added macros debug_d and debug_dv, respectively debug plus delay and
+    debug verbose plus delay.  Removed the old Debug macro.
+  o Restored command line switch `-w' (wait).
+  o Rewrote (again) netcat_resolvehost(), this time it's a little more
+    abstracted.
+  o Removed libtool support (it wasn't really needed at the moment)
+  o Added Native Language Support to the project
+  o Added the first traslation file (italian)
+
+
+[*] Mon Apr 29 2002 - netcat v0.2.0
+
+  o Changed the define HINF to typedef netcat_host.
+  o Removed comparehosts() function.
+  o Removed gethostpoop() function.
+  o Fixed some warnings.
+  o Added file network.c, containing function netcat_resolvehost(), which is
+    the equivalent of the old gethostpoop().
+  o Added debug() and debug_v() routines, to improve debugging output.
+    Debug() is now obsolete and will be removed soon.
+  o Added file proto.h, containing all externs and function declarations.
+  o Changed some global variable names and types
+  o Added function netcat_fhexdump() which substitutes the old oprint()
+    function.  Removed some unused global variables.
+  o Added command line switch `-x' (hexdump). Switch `-o' implies `-x'.
+  o Added command line switch `-V' (version).
+  o Added function netcat_getport() which substitutes the old getportpoop().
+    Updated references to the function and related struct.
+
+
+[*] Sun Apr 28 2002 - netcat v0.1.0
+
+  o Great cleanup of the original source files, this will be the base for the
+    rewrite.
+  o Rewrote command line reader from stdin (dynamically rebuilds argv based on
+    the input string.
+  o Added functions netcat_string_split() and netcat_commandline().
+
